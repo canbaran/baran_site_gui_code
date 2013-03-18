@@ -2,7 +2,7 @@ import email, getpass, imaplib, os
 
 #create mail object instance
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
-mail.login('canbaran85@gmail.com', 'mclord')
+mail.login('', '')
 mail.select('inbox')
 [result, data] = mail.uid('search', None, '(from bogac.ayvaz@yapikredi.com.tr X-GM-RAW has:attachment)')
 data = data[0].split(' ')
